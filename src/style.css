@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #f4f7f9;
+  color: #2e464f;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
