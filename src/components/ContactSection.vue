@@ -17,7 +17,7 @@
 .contact-card { display: flex; align-items: end; justify-content: space-between; gap: 36px; padding: 38px clamp(24px, 5vw, 52px); border-radius: 24px; background: #e7f1ef; }
 .contact-card h2 { margin-bottom: 12px; color: #29464b; font-size: clamp(1.8rem, 4vw, 2.45rem); font-weight: 500; }
 .contact-card p:not(.section-label) { max-width: 460px; margin-bottom: 0; color: #5e7072; line-height: 1.7; }
-.contact-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: end; gap: 18px; white-space: nowrap; }
+.contact-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: end; gap: 18px; }
 .contact-links a { color: #39716d; font-size: .9rem; font-weight: 700; text-decoration: none; }
 .contact-links a:hover { text-decoration: underline; }
 .contact-links .primary-link { padding: 13px 17px; border-radius: 999px; background: #4f8580; color: #fff; text-decoration: none; }

@@ -7,7 +7,7 @@
       <ContactSection />
     </main>
     <footer class="footer">
-      <span>© 2025 Anelise Chagas</span>
+      <span>© {{ new Date().getFullYear() }} Anelise Chagas</span>
       <span>Psicóloga Clínica · CRP 12/28457</span>
     </footer>
   </div>
