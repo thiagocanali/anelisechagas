@@ -1,5 +1,5 @@
 <template>
-  <section class="services-section" aria-labelledby="services-title">
+  <section id="servicos" class="services-section" aria-labelledby="services-title">
     <div class="section-intro">
       <p class="section-label">Como posso ajudar</p>
       <h2 id="services-title" class="section-heading">Um acompanhamento no seu ritmo.</h2>

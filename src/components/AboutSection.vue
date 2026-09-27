@@ -1,5 +1,5 @@
 <template>
-  <section class="about-section" aria-labelledby="about-title">
+  <section id="sobre" class="about-section" aria-labelledby="about-title">
     <div>
       <p class="section-label">Sobre o meu trabalho</p>
       <h2 id="about-title" class="section-heading">Cuidar da mente também é um gesto de coragem.</h2>
