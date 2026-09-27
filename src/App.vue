@@ -1,7 +1,8 @@
 <template>
   <div class="site-shell">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
     <HeaderSection />
-    <main class="container">
+    <main id="conteudo" class="container">
       <AboutSection />
       <ServicesSection />
       <ContactSection />
