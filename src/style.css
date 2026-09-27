@@ -4,13 +4,19 @@
   color: #29464b;
   background: #f7faf9;
   font-family: 'DM Sans', sans-serif;
+  --ink: #29464b;
+  --muted: #5e7072;
+  --surface: #f7faf9;
+  --surface-soft: #e7f1ef;
+  --accent: #4f8580;
+  --line: #d8e4e4;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; min-width: 320px; background: #f7faf9; }
+body { margin: 0; min-width: 320px; background: var(--surface); }
 h1, h2, h3, p { margin-top: 0; }
 h1, h2, h3 { font-family: 'Playfair Display', serif; }
 a { color: inherit; }

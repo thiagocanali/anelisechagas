@@ -7,8 +7,8 @@
     </div>
     <div class="contact-links">
       <a class="primary-link" href="mailto:anelisechagas.s@hotmail.com">Enviar um e-mail <span aria-hidden="true">→</span></a>
-      <a href="https://instagram.com/anelisechagas" target="_blank" rel="noopener noreferrer">Instagram <span aria-hidden="true">↗</span></a>
-      <a href="https://www.linkedin.com/in/anelise-chagas/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+      <a href="https://instagram.com/anelisechagas" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre em nova aba)">Instagram <span aria-hidden="true">↗</span></a>
+      <a href="https://www.linkedin.com/in/anelise-chagas/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (abre em nova aba)">LinkedIn <span aria-hidden="true">↗</span></a>
     </div>
   </section>
 </template>
