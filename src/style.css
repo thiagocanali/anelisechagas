@@ -1,10 +1,35 @@
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: #f4f7f9;
-  color: #2e464f;
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
+
+:root {
+  color: #29464b;
+  background: #f7faf9;
+  font-family: 'DM Sans', sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #f7faf9; }
+h1, h2, h3, p { margin-top: 0; }
+h1, h2, h3 { font-family: 'Playfair Display', serif; }
+a { color: inherit; }
+::selection { color: #fff; background: #4f8580; }
+
+.section-label {
+  margin-bottom: 12px;
+  color: #5b918b;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
+
+.section-heading {
+  margin-bottom: 18px;
+  color: #29464b;
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  line-height: 1.15;
+}
+
+.section-copy { color: #5e7072; line-height: 1.8; }
