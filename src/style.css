@@ -25,6 +25,23 @@ a { color: inherit; }
 :focus-visible { outline: 3px solid #8ab9b2; outline-offset: 4px; }
 ::selection { color: #fff; background: #4f8580; }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #dbe9e7;
+    background: #17272a;
+    --ink: #dbe9e7;
+    --muted: #a7bcba;
+    --surface: #17272a;
+    --surface-soft: #243b3d;
+    --accent: #8fc6bc;
+    --line: #385456;
+  }
+  body { background: var(--surface); }
+  .section-heading { color: var(--ink); }
+  .section-copy { color: var(--muted); }
+  .footer { border-color: var(--line); color: #9bb1af; }
+}
+
 .skip-link {
   position: fixed;
   top: 12px;
