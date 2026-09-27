@@ -16,6 +16,7 @@
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+section[id] { scroll-margin-top: 24px; }
 body { margin: 0; min-width: 320px; background: var(--surface); }
 body, a, button, input, textarea { transition: background-color .25s ease, color .25s ease, border-color .25s ease; }
 h1, h2, h3, p { margin-top: 0; }

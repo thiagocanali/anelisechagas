@@ -39,6 +39,7 @@ import ContactSection from './components/ContactSection.vue'
   color: #718486;
   font-size: 0.85rem;
 }
+.footer p { margin: 0; }
 @media (max-width: 640px) {
   .container { width: min(100% - 32px, 980px); padding-top: 48px; }
   .footer { width: min(100% - 32px, 980px); flex-direction: column; }
