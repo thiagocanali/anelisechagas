@@ -8,8 +8,8 @@
       <ContactSection />
     </main>
     <footer class="footer">
-      <span>© {{ new Date().getFullYear() }} Anelise Chagas</span>
-      <span>Psicóloga Clínica · CRP 12/28457</span>
+      <p>© {{ new Date().getFullYear() }} Anelise Chagas</p>
+      <p>Psicóloga Clínica · CRP 12/28457</p>
     </footer>
   </div>
 </template>
@@ -29,6 +29,7 @@ import ContactSection from './components/ContactSection.vue'
 }
 .footer {
   display: flex;
+  align-items: baseline;
   justify-content: space-between;
   gap: 16px;
   width: min(100% - 40px, 980px);
