@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="site-shell">
     <HeaderSection />
-    <div class="container">
+    <main>
       <AboutSection />
       <ServicesSection />
       <ContactSection />
-    </div>
+    </main>
     <footer class="footer">
-      © 2025 · Site profissional de Anelise Chagas, Psicóloga
+      <p>© 2025 · Anelise Chagas, Psicóloga · CRP 12/28457</p>
     </footer>
   </div>
 </template>
@@ -20,19 +20,19 @@ import ContactSection from './components/ContactSection.vue'
 </script>
 
 <style>
-.container {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+.site-shell {
+  overflow: hidden;
 }
+
 .footer {
+  padding: 2rem 1.5rem 2.5rem;
+  color: var(--color-muted);
   text-align: center;
-  padding: 20px;
-  color: #668;
-  margin-top: 40px;
-  font-size: 0.9rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+}
+
+.footer p {
+  margin: 0;
 }
 </style>

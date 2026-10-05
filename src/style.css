@@ -1,10 +1,44 @@
-body {
-  margin: 0;
-  font-family: 'Montserrat', sans-serif;
-  background: #f4f7f9;
-  color: #2e464f;
+:root {
+  --color-cream: #f3f0e7;
+  --color-paper: #fffdf8;
+  --color-ink: #353b31;
+  --color-muted: #666a5d;
+  --color-terra: #a96852;
+  --color-sage: #dce0cf;
+  --color-line: #d4d0c3;
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-sans: 'DM Sans', Arial, sans-serif;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  min-width: 320px;
+  margin: 0;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  font-synthesis: none;
+}
+
+a:focus-visible, button:focus-visible {
+  outline: 2px solid var(--color-terra);
+  outline-offset: 4px;
+}
+
+::selection { background: #ead4c6; color: var(--color-ink); }
+
+.sr-only {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
 }
