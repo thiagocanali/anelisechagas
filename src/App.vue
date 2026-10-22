@@ -1,13 +1,15 @@
 <template>
   <div class="site-shell">
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
     <HeaderSection />
-    <main>
+    <main id="conteudo" class="container">
       <AboutSection />
       <ServicesSection />
       <ContactSection />
     </main>
     <footer class="footer">
-      <p>© 2025 · Anelise Chagas, Psicóloga · CRP 12/28457</p>
+      <p>© {{ new Date().getFullYear() }} Anelise Chagas</p>
+      <p>Psicóloga Clínica · CRP 12/28457</p>
     </footer>
   </div>
 </template>
@@ -20,19 +22,26 @@ import ContactSection from './components/ContactSection.vue'
 </script>
 
 <style>
-.site-shell {
-  overflow: hidden;
+.container {
+  width: min(100% - 40px, 980px);
+  margin: 0 auto;
+  padding: 72px 0 24px;
 }
-
 .footer {
-  padding: 2rem 1.5rem 2.5rem;
-  color: var(--color-muted);
-  text-align: center;
-  font-size: 0.78rem;
-  letter-spacing: 0.05em;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  width: min(100% - 40px, 980px);
+  margin: 0 auto;
+  padding: 28px 0 36px;
+  border-top: 1px solid #d8e4e4;
+  color: #718486;
+  font-size: 0.85rem;
 }
-
-.footer p {
-  margin: 0;
+.footer p { margin: 0; }
+@media (max-width: 640px) {
+  .container { width: min(100% - 32px, 980px); padding-top: 48px; }
+  .footer { width: min(100% - 32px, 980px); flex-direction: column; }
 }
 </style>
