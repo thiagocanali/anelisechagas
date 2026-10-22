@@ -14,7 +14,7 @@
 </template>
 
 <style scoped>
-.contact-card { display: flex; align-items: end; justify-content: space-between; gap: 36px; padding: 38px clamp(24px, 5vw, 52px); border: 1px solid #d5e1e8; border-radius: 24px; background: #e8f0f5; }
+.contact-card { display: flex; align-items: end; justify-content: space-between; gap: 36px; padding: 38px clamp(24px, 5vw, 52px); border: 1px solid var(--line); border-radius: 24px; background: var(--surface-soft); }
 @media (prefers-color-scheme: dark) {
   .contact-card { border-color: #466277; background: #263f52; }
   .contact-card h2 { color: #eef5f8; }
