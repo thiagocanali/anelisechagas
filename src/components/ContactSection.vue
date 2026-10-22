@@ -21,8 +21,8 @@
   .contact-card p:not(.section-label) { color: #c3d3dd; }
   .contact-links a { color: #d1e3ed; }
 }
-.contact-card h2 { margin-bottom: 12px; color: #24445c; font-size: clamp(1.8rem, 4vw, 2.45rem); font-weight: 500; }
-.contact-card p:not(.section-label) { max-width: 460px; margin-bottom: 0; color: #596875; line-height: 1.7; }
+.contact-card h2 { margin-bottom: 12px; color: var(--deep); font-size: clamp(1.8rem, 4vw, 2.45rem); font-weight: 500; }
+.contact-card p:not(.section-label) { max-width: 460px; margin-bottom: 0; color: var(--muted); line-height: 1.7; }
 .contact-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: end; gap: 18px; }
 .contact-links a { color: #426b83; font-size: .9rem; font-weight: 700; text-decoration: none; }
 .contact-links a:hover { text-decoration: underline; }

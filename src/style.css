@@ -37,6 +37,7 @@ a { color: inherit; }
     --surface: #17272a;
     --surface-soft: #243b3d;
     --accent: #8fc6bc;
+    --deep: #dbe9e7;
     --line: #385456;
   }
   body { background: var(--surface); }
