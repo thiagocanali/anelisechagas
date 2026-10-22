@@ -12,7 +12,7 @@
 </template>
 
 <style scoped>
-.about-section { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(36px, 8vw, 96px); padding-bottom: 72px; border-bottom: 1px solid #dce9e6; }
+.about-section { display: grid; grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr); gap: clamp(36px, 8vw, 96px); padding-bottom: 72px; border-bottom: 1px solid #d5e1e8; }
 .about-copy { padding-top: 8px; }
 .about-copy p + p { margin-top: 18px; }
 @media (max-width: 700px) { .about-section { grid-template-columns: 1fr; gap: 12px; padding-bottom: 52px; } }
