@@ -5,8 +5,21 @@
       <h2 id="contact-title">Você pode chegar como está.</h2>
       <p>Não é preciso ter todas as respostas para começar. Entre em contato para tirar suas dúvidas e encontrar um primeiro passo que faça sentido para você.</p>
     </div>
-    <div class="contact-links">
-      <a class="primary-link" href="mailto:anelisechagas.s@hotmail.com">Enviar um e-mail <span aria-hidden="true">→</span></a>
+    <div class="contact-links" aria-label="Canais de contato">
+      <a
+        class="primary-link"
+        href="https://wa.me/5549984114013"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Conversar pelo WhatsApp (abre em nova aba)"
+      >Conversar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+      <a
+        href="https://linktr.ee/anelisechagas"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Acessar Linktree (abre em nova aba)"
+      >Todos os canais <span aria-hidden="true">↗</span></a>
+      <a href="mailto:anelisechagas.s@hotmail.com">E-mail <span aria-hidden="true">↗</span></a>
       <a href="https://instagram.com/anelisechagas" target="_blank" rel="noopener noreferrer" aria-label="Instagram (abre em nova aba)">Instagram <span aria-hidden="true">↗</span></a>
       <a href="https://www.linkedin.com/in/anelise-chagas/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn (abre em nova aba)">LinkedIn <span aria-hidden="true">↗</span></a>
     </div>
