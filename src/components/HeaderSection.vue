@@ -10,7 +10,13 @@
       <h1>Um espaço para você ser quem é.</h1>
       <p class="subtitle">Um lugar de escuta, acolhimento e respeito à sua história, onde você pode explorar seus sentimentos no seu tempo.</p>
       <div class="hero-actions">
-        <a class="header-cta" href="#contato">Vamos conversar <span aria-hidden="true">→</span></a>
+        <a
+          class="header-cta"
+          href="https://wa.me/5549984114013"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Conversar pelo WhatsApp (abre em nova aba)"
+        >Conversar pelo WhatsApp <span aria-hidden="true">↗</span></a>
         <a class="header-secondary" href="#servicos">Conheça minha abordagem</a>
       </div>
       <p class="credential">Anelise Chagas · CRP 12/28457</p>
