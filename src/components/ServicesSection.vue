@@ -10,7 +10,7 @@
       <article class="service-card"><span class="card-number">02</span><h3>Público atendido</h3><p>Atendimento psicológico a adolescentes, adultos e pessoas idosas.</p></article>
       <article class="service-card"><span class="card-number">03</span><h3>Abordagem</h3><p>Atuação orientada pela Abordagem Centrada na Pessoa (ACP), com atenção à empatia, à autenticidade e à consideração positiva.</p></article>
     </div>
-    <p class="regional-notice">Os atendimentos online para pessoas em outros estados são realizados por profissional com inscrição principal no Conselho Regional de Psicologia de Santa Catarina (CRP-12).</p>
+    <p class="regional-notice">A atuação profissional está vinculada ao Conselho Regional de Psicologia de Santa Catarina (CRP-12). Os atendimentos online podem ser realizados para pessoas em outros estados, conforme avaliação da adequação dessa modalidade a cada situação.</p>
   </section>
 </template>
 
