@@ -8,8 +8,8 @@
       <ContactSection />
     </main>
     <footer class="footer">
-      <p>© {{ new Date().getFullYear() }} Anelise Chagas</p>
-      <p>Psicóloga Clínica · CRP 12/28457</p>
+      <p>© {{ new Date().getFullYear() }} Anelise Cristine Chagas Schwartz</p>
+      <p>Psicóloga Anelise Cristine Chagas Schwartz · CRP-12/28457</p>
     </footer>
   </div>
 </template>
