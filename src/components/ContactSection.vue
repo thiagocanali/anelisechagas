@@ -1,9 +1,9 @@
 <template>
   <section id="contato" class="contact-card" aria-labelledby="contact-title">
     <div>
-      <p class="section-label">Primeiro passo</p>
-      <h2 id="contact-title">Você pode chegar como está.</h2>
-      <p>Não é preciso ter todas as respostas para começar. Entre em contato para tirar suas dúvidas e encontrar um primeiro passo que faça sentido para você.</p>
+      <p class="section-label">Informações sobre o atendimento</p>
+      <h2 id="contact-title">Canais de contato.</h2>
+      <p>Para informações sobre modalidades de atendimento, disponibilidade e condições do serviço, entre em contato por um dos canais abaixo.</p>
     </div>
     <div class="contact-links" aria-label="Canais de contato">
       <a
@@ -12,7 +12,7 @@
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Conversar pelo WhatsApp (abre em nova aba)"
-      >Conversar pelo WhatsApp <span aria-hidden="true">↗</span></a>
+      >WhatsApp <span aria-hidden="true">↗</span></a>
       <a
         href="https://linktr.ee/anelisechagas"
         target="_blank"

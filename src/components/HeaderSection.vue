@@ -7,8 +7,8 @@
         <a href="#contato">Contato</a>
       </nav>
       <p class="eyebrow">Psicologia clínica</p>
-      <h1>Um espaço para você ser quem é.</h1>
-      <p class="subtitle">Um lugar de escuta, acolhimento e respeito à sua história, onde você pode explorar seus sentimentos no seu tempo.</p>
+      <h1>Um espaço de escuta e respeito à sua singularidade.</h1>
+      <p class="subtitle">Um espaço profissional pautado pela escuta, pela empatia e pelo respeito à história de cada pessoa.</p>
       <div class="hero-actions">
         <a
           class="header-cta"
@@ -17,9 +17,9 @@
           rel="noopener noreferrer"
           aria-label="Conversar pelo WhatsApp (abre em nova aba)"
         >Conversar pelo WhatsApp <span aria-hidden="true">↗</span></a>
-        <a class="header-secondary" href="#servicos">Conheça minha abordagem</a>
+        <a class="header-secondary" href="#servicos">Conheça a abordagem</a>
       </div>
-      <p class="credential">Anelise Chagas · CRP 12/28457</p>
+      <p class="credential">Psicóloga Anelise Cristine Chagas Schwartz · CRP-12/28457</p>
     </div>
   </header>
 </template>
