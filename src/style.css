@@ -40,7 +40,9 @@ a { color: inherit; }
     --surface: #17272a;
     --surface-soft: #243b3d;
     --accent: #8fc6bc;
+    --accent-soft: #8fc6bc;
     --deep: #dbe9e7;
+    --warm: #243b3d;
     --line: #385456;
     --heading: #dbe9e7;
     --section-label: #8fc6bc;
