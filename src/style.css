@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap');
-
 :root {
   color: #263746;
   background: #f3f7fa;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
   --ink: #263746;
   --deep: #24445c;
   --muted: #596875;
@@ -26,7 +24,7 @@ section[id] { scroll-margin-top: 24px; }
 body { margin: 0; min-width: 320px; background: var(--surface); }
 body, a, button, input, textarea { transition: background-color .25s ease, color .25s ease, border-color .25s ease; }
 h1, h2, h3, p { margin-top: 0; }
-h1, h2, h3 { font-family: 'Playfair Display', serif; }
+h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; }
 a { color: inherit; }
 :focus-visible { outline: 3px solid var(--focus); outline-offset: 4px; }
 ::selection { color: #fff; background: #4f8580; }
