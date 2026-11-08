@@ -23,7 +23,7 @@
 .card-number { color: var(--accent-soft); font-size: .75rem; font-weight: 700; letter-spacing: .1em; }
 .service-card h3 { margin: 42px 0 10px; color: var(--deep); font-size: 1.35rem; font-weight: 500; }
 .service-card p { margin: 0; color: var(--muted); font-size: .92rem; line-height: 1.65; }
-.regional-notice { grid-column: 1 / -1; margin: 0; color: #596875; font-size: .88rem; line-height: 1.6; }
+.regional-notice { grid-column: 1 / -1; margin: 0; color: var(--muted); font-size: .88rem; line-height: 1.6; }
 @media (max-width: 850px) { .services-section { grid-template-columns: 1fr; gap: 28px; padding: 52px 0; } .section-intro .section-copy { max-width: 520px; } }
 @media (max-width: 560px) { .service-grid { grid-template-columns: 1fr; } .service-card { min-height: auto; } .service-card h3 { margin-top: 28px; } }
 </style>
