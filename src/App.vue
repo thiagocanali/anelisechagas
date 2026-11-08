@@ -35,7 +35,7 @@ import ContactSection from './components/ContactSection.vue'
   width: min(100% - 40px, 980px);
   margin: 0 auto;
   padding: 28px 0 36px;
-  border-top: 1px solid #d8e4e4;
+  border-top: 1px solid var(--section-border);
   color: #718486;
   font-size: 0.85rem;
 }
