@@ -1,16 +1,16 @@
-# Anelise Chagas — Psicóloga Clínica
+# Anelise Cristine Chagas Schwartz — Psicóloga
 
-Site institucional de apresentação profissional de Anelise Chagas, psicóloga (CRP 12/28457), com informações sobre sua atuação, abordagem e canais de contato.
+Site institucional de apresentação profissional de Anelise Cristine Chagas Schwartz, Psicóloga, CRP-12/28457, com informações sobre sua atuação e canais de contato.
 
 ## Sobre o site
 
 - Apresentação profissional e formação.
-- Informações sobre atendimento presencial em Blumenau e sessões online.
-- Público informado atualmente: adolescentes, adultos e idosos.
+- Informações sobre atendimento presencial em Blumenau e atendimento online.
+- Público informado atualmente: adolescentes, adultos e pessoas idosas.
 - Abordagem Centrada na Pessoa (ACP).
 - Contato por WhatsApp, e-mail, Instagram, LinkedIn e Linktree.
 
-> As informações sobre serviços e público atendido devem ser mantidas alinhadas à atuação profissional efetivamente oferecida e confirmadas pela responsável antes de qualquer ampliação.
+> As informações sobre formação, serviços, público atendido e modalidades devem permanecer alinhadas à atuação profissional efetivamente oferecida e ser confirmadas pela responsável antes de qualquer alteração.
 
 ## Tecnologias
 
