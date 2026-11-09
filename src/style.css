@@ -16,6 +16,13 @@
   --heading: #29464b;
   --section-label: #5b918b;
   --focus: #8ab9b2;
+  --section-border: #d5e1e8;
+  --contact-surface: var(--surface-soft);
+  --contact-heading: var(--deep);
+  --contact-copy: var(--muted);
+  --contact-link: #426b83;
+  --contact-primary: #426b83;
+  --contact-primary-hover: #24445c;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 }
@@ -47,6 +54,13 @@ a { color: inherit; }
     --heading: #dbe9e7;
     --section-label: #8fc6bc;
     --focus: #8fc6bc;
+    --section-border: var(--line);
+    --contact-surface: #263f52;
+    --contact-heading: #eef5f8;
+    --contact-copy: #c3d3dd;
+    --contact-link: #d1e3ed;
+    --contact-primary: #426b83;
+    --contact-primary-hover: #34576f;
   }
   body { background: var(--surface); }
   .section-heading { color: var(--ink); }
