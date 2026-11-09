@@ -37,8 +37,8 @@
 h1 { max-width: 760px; margin: 0 auto 20px; color: var(--deep); font-size: clamp(2.7rem, 8vw, 5.2rem); font-weight: 500; line-height: 1.04; }
 .subtitle { max-width: 560px; margin: 0 auto 30px; color: var(--muted); font-size: clamp(1rem, 2vw, 1.2rem); line-height: 1.7; }
 .hero-actions { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 20px; }
-.header-cta { display: inline-flex; align-items: center; gap: 12px; padding: 13px 20px; border-radius: 999px; background: var(--accent); color: #fff; font-weight: 700; text-decoration: none; transition: transform .2s, background .2s; }
-.header-cta:hover { background: var(--deep); transform: translateY(-2px); }
+.header-cta { display: inline-flex; align-items: center; gap: 12px; padding: 13px 20px; border-radius: 999px; background: var(--contact-primary); color: #fff; font-weight: 700; text-decoration: none; transition: transform .2s, background .2s; }
+.header-cta:hover { background: var(--contact-primary-hover); transform: translateY(-2px); }
 .header-secondary { color: var(--accent); font-size: .9rem; font-weight: 700; text-decoration: none; }
 .header-secondary:hover { color: var(--deep); text-decoration: underline; }
 .credential { margin: 22px 0 0; color: var(--accent-soft); font-size: .82rem; }
