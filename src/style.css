@@ -9,10 +9,10 @@
   --surface-soft: #e8f0f5;
   --warm: #fcfcfa;
   --accent: #426b83;
-  --accent-soft: #7896aa;
+  --accent-soft: #526f83;
   --line: #d5e1e8;
   --heading: #29464b;
-  --section-label: #5b918b;
+  --section-label: #47766f;
   --focus: #8ab9b2;
   --section-border: #d5e1e8;
   --contact-surface: var(--surface-soft);
@@ -63,7 +63,7 @@ a { color: inherit; }
   body { background: var(--surface); }
   .section-heading { color: var(--ink); }
   .section-copy { color: var(--muted); }
-  .footer { border-color: var(--line); color: #9bb1af; }
+  .footer { border-color: var(--line); }
 }
 
 .skip-link {
