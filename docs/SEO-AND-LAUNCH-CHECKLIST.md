@@ -11,6 +11,13 @@ Este documento registra o que já existe e o que depende de informações ou ace
 - Cores da interface do navegador declaradas para os temas claro e escuro.
 - Conteúdo institucional com identificação profissional e CRP.
 
+## Publicação atual
+
+- Ambiente de produção da Vercel: https://anelisechagas.vercel.app/.
+- Alias padrão confirmado no projeto Vercel; deployment atual vinculado ao branch `main` e ao commit `0a83431d13f7bda81e298a07ede054fd86346f15`.
+- A existência desse alias não confirma que ele seja o domínio institucional definitivo. Validar essa decisão com a responsável antes de configurar canonical, sitemap ou ferramentas de indexação.
+- A publicação em produção foi confirmada pela Vercel; a inspeção visual e os testes em navegadores/dispositivos reais ainda precisam ser executados.
+
 ## Pendente antes de configurar indexação definitiva
 
 1. Confirmar o domínio oficial e a URL pública canônica.
