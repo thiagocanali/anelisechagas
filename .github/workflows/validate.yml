@@ -56,10 +56,15 @@ jobs:
 
   dependency-remediation-preview:
     name: Generate safe dependency remediation
+    if: github.event_name == 'pull_request' && github.head_ref == 'ci/production-dependency-audit' && github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -86,3 +91,15 @@ jobs:
           name: dependency-remediation-preview
           path: remediation/
           retention-days: 7
+
+      - name: Commit reviewed non-breaking lockfile changes
+        run: |
+          if git diff --quiet -- package-lock.json; then
+            echo "No lockfile changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json
+          git commit -m "fix: update vulnerable transitive dependencies in lockfile"
+          git push origin "HEAD:${{ github.head_ref }}"
