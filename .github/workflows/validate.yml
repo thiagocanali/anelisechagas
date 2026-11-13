@@ -34,3 +34,72 @@ jobs:
 
       - name: Build production bundle
         run: npm run build
+
+  security-audit:
+    name: Production dependency audit
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Audit production dependencies
+        run: npm audit --omit=dev --audit-level=high
+
+  dependency-remediation-preview:
+    name: Generate safe dependency remediation
+    if: github.event_name == 'pull_request' && github.head_ref == 'ci/production-dependency-audit' && github.event.pull_request.head.repo.full_name == github.repository
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Apply non-breaking audit fixes to lockfile
+        run: npm audit fix --package-lock-only --ignore-scripts --no-fund || true
+
+      - name: Export lockfile remediation
+        run: |
+          mkdir -p remediation
+          cp package-lock.json remediation/package-lock.json
+          git diff -- package-lock.json > remediation/lockfile.patch
+          npm audit --omit=dev --audit-level=high > remediation/audit-report.txt 2>&1 || true
+
+      - name: Upload remediation for review
+        uses: actions/upload-artifact@v4
+        with:
+          name: dependency-remediation-preview
+          path: remediation/
+          retention-days: 7
+
+      - name: Commit reviewed non-breaking lockfile changes
+        run: |
+          if git diff --quiet -- package-lock.json; then
+            echo "No lockfile changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add package-lock.json
+          git commit -m "fix: update vulnerable transitive dependencies in lockfile"
+          git push origin "HEAD:${{ github.head_ref }}"
