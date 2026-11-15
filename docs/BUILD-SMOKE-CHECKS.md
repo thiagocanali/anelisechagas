@@ -24,3 +24,9 @@ O verificador exige `dist/index.html`, idioma pt-BR, título, descrição, viewp
 A checagem não substitui teste visual ou funcional no navegador. A migração Vue CLI → Vite deverá preservar esse contrato ou atualizar conscientemente as verificações, sem desativá-las para obter CI verde.
 
 Nenhum deploy é necessário para executar essa validação.
+
+## Débito técnico identificado no CI #52
+
+O `npm ci` registrou **54 vulnerabilidades no conjunto completo de dependências** (2 baixas, 19 moderadas, 30 altas, 3 críticas), além de avisos de pacotes descontinuados, incluindo ESLint 7 e dependências antigas do Vue CLI. Esses totais incluem dependências de desenvolvimento e **não equivalem a 54 vulnerabilidades exploráveis no site publicado**.
+
+Próximos passos: manter o audit de produção separado (`npm audit --omit=dev --audit-level=high`), registrar as dependências transitivas afetadas e priorizar a migração do Vue CLI para Vite com lockfile regenerado. Não executar `npm audit fix --force` sem testes e revisão de breaking changes.
