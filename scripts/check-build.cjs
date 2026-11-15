@@ -19,7 +19,10 @@ for (const src of scripts) {
   const local = src.replace(/^\/+/, '')
   assert.ok(fs.existsSync(path.join(dist, local)), 'Missing referenced bundle: ' + src)
 }
-const stylesheets = [...html.matchAll(/<link\b[^>]*rel="stylesheet"[^>]*href="([^"]+)"/g)].map(match => match[1])
+const stylesheets = [...html.matchAll(/<link\\b[^>]*>/g)]
+  .filter(match => /\\brel="stylesheet"/.test(match[0]))
+  .map(match => match[0].match(/\\bhref="([^"]+)"/)?.[1])
+  .filter(Boolean)
 assert.ok(stylesheets.length > 0, 'No production stylesheet referenced by index.html')
 for (const href of stylesheets) {
   assert.ok(!/^(?:https?:)?\/\//.test(href), 'Unexpected external stylesheet: ' + href)
