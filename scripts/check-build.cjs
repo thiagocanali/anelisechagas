@@ -1,0 +1,22 @@
+const assert = require('node:assert/strict')
+const fs = require('node:fs')
+const path = require('node:path')
+
+const dist = path.join(__dirname, '..', 'dist')
+const index = path.join(dist, 'index.html')
+assert.ok(fs.existsSync(index), 'Missing production index.html')
+const html = fs.readFileSync(index, 'utf8')
+assert.match(html, /<html\s+lang="pt-BR"/)
+assert.match(html, /<title>Anelise Cristine Chagas Schwartz \| Psicóloga<\/title>/)
+assert.match(html, /name="description"/)
+assert.ok(!html.includes('<%= BASE_URL %>'), 'Unresolved Vue CLI template variable')
+assert.match(html, /<div id="app"><\/div>/)
+assert.ok(fs.existsSync(path.join(dist, 'favicon.ico')), 'Missing favicon')
+const scripts = [...html.matchAll(/<script\b[^>]*src="([^"]+)"/g)].map(match => match[1])
+assert.ok(scripts.length > 0, 'No JavaScript bundles referenced by index.html')
+for (const src of scripts) {
+  assert.ok(!/^(?:https?:)?\/\//.test(src), 'Unexpected external script: ' + src)
+  const local = src.replace(/^\/+/, '')
+  assert.ok(fs.existsSync(path.join(dist, local)), 'Missing referenced bundle: ' + src)
+}
+console.log('Production bundle smoke checks passed')
