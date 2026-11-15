@@ -31,8 +31,9 @@
 .contact-card h2 { margin-bottom: 12px; color: var(--contact-heading); font-size: clamp(1.8rem, 4vw, 2.45rem); font-weight: 500; }
 .contact-card p:not(.section-label) { max-width: 460px; margin-bottom: 0; color: var(--contact-copy); line-height: 1.7; }
 .contact-links { display: flex; flex-wrap: wrap; align-items: center; justify-content: end; gap: 18px; }
-.contact-links a { color: var(--contact-link); font-size: .9rem; font-weight: 700; text-decoration: none; }
+.contact-links a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; gap: 6px; color: var(--contact-link); font-size: .9rem; font-weight: 700; text-decoration: none; }
 .contact-links a:hover { text-decoration: underline; }
+.contact-links a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; border-radius: 6px; }
 .contact-links .primary-link { padding: 13px 17px; border-radius: 999px; background: var(--contact-primary); color: #fff; text-decoration: none; }
 .contact-links .primary-link:hover { background: var(--contact-primary-hover); text-decoration: none; }
 @media (max-width: 700px) { .contact-card { align-items: start; flex-direction: column; gap: 26px; } .contact-links { justify-content: start; gap: 14px; } }
