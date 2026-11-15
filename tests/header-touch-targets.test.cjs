@@ -6,7 +6,7 @@ const path = require('node:path')
 const header = fs.readFileSync(path.join(__dirname, '..', 'src', 'components', 'HeaderSection.vue'), 'utf8')
 
 test('primary navigation links provide 44px touch targets', () => {
-  assert.match(header, /\.site-nav a\s*\{[^}]*min-height:\s*44px\s*;/s)
+  assert.match(header, /\.site-nav a\s*\{[^}]*min-height:\s*44px\s*;[^}]*min-width:\s*44px\s*;/s)
 })
 
 test('secondary header action provides a 44px touch target', () => {
