@@ -4,28 +4,33 @@ const path = require('node:path')
 
 const dist = path.join(__dirname, '..', 'dist')
 const index = path.join(dist, 'index.html')
+function localAsset(url) {
+  assert.ok(!/^(?:https?:)?\/\//.test(url), 'Unexpected external asset: ' + url)
+  const pathname = url.split(/[?#]/, 1)[0].replace(/^\/+/, '')
+  assert.ok(pathname && !pathname.split('/').includes('..'), 'Unsafe asset path: ' + url)
+  const file = path.resolve(dist, pathname)
+  assert.ok(file.startsWith(dist + path.sep), 'Asset outside build directory: ' + url)
+  assert.ok(fs.existsSync(file), 'Missing referenced asset: ' + url)
+  assert.ok(fs.statSync(file).size > 0, 'Empty referenced asset: ' + url)
+}
 assert.ok(fs.existsSync(index), 'Missing production index.html')
 const html = fs.readFileSync(index, 'utf8')
 assert.match(html, /<html\s+lang="pt-BR"/)
 assert.match(html, /<title>Anelise Cristine Chagas Schwartz \| Psicóloga<\/title>/)
 assert.match(html, /name="description"/)
+assert.match(html, /property="og:title"/)
+assert.match(html, /property="og:description"/)
+assert.match(html, /name="viewport"/)
 assert.ok(!html.includes('<%= BASE_URL %>'), 'Unresolved Vue CLI template variable')
 assert.match(html, /<div id="app"><\/div>/)
 assert.ok(fs.existsSync(path.join(dist, 'favicon.ico')), 'Missing favicon')
 const scripts = [...html.matchAll(/<script\b[^>]*src="([^"]+)"/g)].map(match => match[1])
 assert.ok(scripts.length > 0, 'No JavaScript bundles referenced by index.html')
-for (const src of scripts) {
-  assert.ok(!/^(?:https?:)?\/\//.test(src), 'Unexpected external script: ' + src)
-  const local = src.replace(/^\/+/, '')
-  assert.ok(fs.existsSync(path.join(dist, local)), 'Missing referenced bundle: ' + src)
-}
+for (const src of scripts) localAsset(src)
 const stylesheets = [...html.matchAll(/<link\b[^>]*>/g)]
   .filter(match => /\brel="stylesheet"/.test(match[0]))
   .map(match => match[0].match(/\bhref="([^"]+)"/)?.[1])
   .filter(Boolean)
 assert.ok(stylesheets.length > 0, 'No production stylesheet referenced by index.html')
-for (const href of stylesheets) {
-  assert.ok(!/^(?:https?:)?\/\//.test(href), 'Unexpected external stylesheet: ' + href)
-  assert.ok(fs.existsSync(path.join(dist, href.replace(/^\/+/, ''))), 'Missing stylesheet: ' + href)
-}
+for (const href of stylesheets) localAsset(href)
 console.log('Production bundle smoke checks passed')
