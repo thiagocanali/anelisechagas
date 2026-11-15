@@ -6,7 +6,7 @@ const path = require('node:path')
 const contact = fs.readFileSync(path.join(__dirname, '..', 'src', 'components', 'ContactSection.vue'), 'utf8')
 
 test('contact links have a minimum touch target of 44px', () => {
-  assert.match(contact, /\.contact-links a\s*\{[^}]*min-height:\s*44px\s*;/s)
+  assert.match(contact, /\.contact-links a\s*\{[^}]*min-height:\s*44px\s*;[^}]*min-width:\s*44px\s*;/s)
 })
 
 test('contact links expose a visible keyboard focus indicator', () => {
