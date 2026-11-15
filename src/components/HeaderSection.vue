@@ -28,7 +28,7 @@
 .header { padding: 22px 20px 86px; background: linear-gradient(135deg, var(--surface-soft) 0%, var(--surface) 72%); border-bottom: 1px solid var(--line); }
 .header-inner { max-width: 820px; margin: 0 auto; text-align: center; }
 .site-nav { display: flex; justify-content: center; gap: 26px; margin-bottom: 82px; }
-.site-nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; position: relative; color: var(--muted); font-size: .82rem; font-weight: 700; text-decoration: none; }
+.site-nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; position: relative; color: var(--muted); font-size: .82rem; font-weight: 700; text-decoration: none; }
 .site-nav a::after { position: absolute; right: 0; bottom: -7px; left: 0; height: 2px; border-radius: 999px; background: var(--accent-soft); content: ''; transform: scaleX(0); transition: transform .2s ease; }
 .site-nav a:hover, .site-nav a:focus-visible { color: var(--deep); }
 .site-nav a:hover::after, .site-nav a:focus-visible::after { transform: scaleX(1); }
