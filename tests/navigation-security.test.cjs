@@ -22,8 +22,8 @@ test('links opening new tabs use noopener and noreferrer', () => {
       const tag = match[0]
       if (!/\btarget="_blank"/.test(tag)) continue
       count++
-      const rel = tag.match(/\\brel="([^"]*)"/)?.[1] || ''
-      const tokens = new Set(rel.split(/\\s+/).filter(Boolean))
+      const rel = tag.match(/\brel="([^"]*)"/)?.[1] || ''
+      const tokens = new Set(rel.split(/\s+/).filter(Boolean))
       assert.ok(tokens.has('noopener') && tokens.has('noreferrer'), 'Unsafe new-tab link in ' + file)
     }
   }
