@@ -28,7 +28,7 @@
 .header { padding: 22px 20px 86px; background: linear-gradient(135deg, var(--surface-soft) 0%, var(--surface) 72%); border-bottom: 1px solid var(--line); }
 .header-inner { max-width: 820px; margin: 0 auto; text-align: center; }
 .site-nav { display: flex; justify-content: center; gap: 26px; margin-bottom: 82px; }
-.site-nav a { position: relative; color: var(--muted); font-size: .82rem; font-weight: 700; text-decoration: none; }
+.site-nav a { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; min-width: 44px; position: relative; color: var(--muted); font-size: .82rem; font-weight: 700; text-decoration: none; }
 .site-nav a::after { position: absolute; right: 0; bottom: -7px; left: 0; height: 2px; border-radius: 999px; background: var(--accent-soft); content: ''; transform: scaleX(0); transition: transform .2s ease; }
 .site-nav a:hover, .site-nav a:focus-visible { color: var(--deep); }
 .site-nav a:hover::after, .site-nav a:focus-visible::after { transform: scaleX(1); }
@@ -39,7 +39,7 @@ h1 { max-width: 760px; margin: 0 auto 20px; color: var(--deep); font-size: clamp
 .hero-actions { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 20px; }
 .header-cta { display: inline-flex; align-items: center; gap: 12px; padding: 13px 20px; border-radius: 999px; background: var(--contact-primary); color: #fff; font-weight: 700; text-decoration: none; transition: transform .2s, background .2s; }
 .header-cta:hover { background: var(--contact-primary-hover); transform: translateY(-2px); }
-.header-secondary { color: var(--accent); font-size: .9rem; font-weight: 700; text-decoration: none; }
+.header-secondary { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); font-size: .9rem; font-weight: 700; text-decoration: none; }
 .header-secondary:hover { color: var(--deep); text-decoration: underline; }
 .credential { margin: 22px 0 0; color: var(--accent-soft); font-size: .82rem; }
 </style>
