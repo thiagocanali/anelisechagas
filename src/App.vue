@@ -2,7 +2,7 @@
   <div class="site-shell">
     <a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
     <HeaderSection />
-    <main id="conteudo" class="container">
+    <main id="conteudo" class="container" tabindex="-1">
       <AboutSection />
       <ServicesSection />
       <ContactSection />
