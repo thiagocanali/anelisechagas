@@ -34,3 +34,6 @@ jobs:
 
       - name: Build production bundle
         run: npm run build
+
+      - name: Verify generated production assets
+        run: node scripts/check-build.cjs
